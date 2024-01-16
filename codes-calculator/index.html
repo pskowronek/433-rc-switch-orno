@@ -1,0 +1,41 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORNO 433mhz RC switch/socket codes calculator</title>
+  <script src="calculator.js"></script>
+</head>
+<body>
+  <h1>ORNO 433mhz RC switch/socket codes calculator</h1>
+
+  <div>
+    <div class="checkbox-row" id="systemCode">
+      <!-- Checkboxes for systemCode -->
+      <input type="checkbox" id="s1" onclick="checkboxStateChanged('result')">
+      <input type="checkbox" id="s2" onclick="checkboxStateChanged('result')">
+      <input type="checkbox" id="s3" onclick="checkboxStateChanged('result')">
+      <input type="checkbox" id="s4" onclick="checkboxStateChanged('result')">
+      <input type="checkbox" id="s5" onclick="checkboxStateChanged('result')">
+    </div>
+
+    <div class="checkbox-row" id="unitCode">
+      <!-- Checkboxes for unitCode -->
+      <input type="checkbox" id="u1" onclick="checkboxStateChanged('result')">
+      <input type="checkbox" id="u2" onclick="checkboxStateChanged('result')">
+      <input type="checkbox" id="u3" onclick="checkboxStateChanged('result')">
+      <input type="checkbox" id="u4" onclick="checkboxStateChanged('result')">
+      <input type="checkbox" id="u5" onclick="checkboxStateChanged('result')">
+    </div>
+  </div>
+  
+  <div id="result">
+    <p id="codeResult">Code: [Code placeholder]</p>
+    <p id="binaryResult">Binary ON: [Binary placeholder] Binary OFF: [Binary placeholder]</p>
+    <p id="decimalResult">Decimal ON: [Decimal placeholder] Decimal OFF: [Decimal placeholder]</p>
+  </div>
+</body>
+</html>
