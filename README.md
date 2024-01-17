@@ -42,7 +42,7 @@ Under RPi the signal can be distorted due to timing issues related to CPU load o
 
 ## Attribution
 
-Big thanks goes to the following projects, these were crucial while creating the calculator and could be exposed online for convenience:
+Big thanks go to the following projects, these were crucial while creating the calculator and could be exposed online for convenience:
 
 - [arduino-UNO-or-Raspberry-PI-RF-433Mhz-ORNO-OR-GB-405](https://github.com/tureq80/arduino-UNO-or-Raspberry-PI-RF-433Mhz-ORNO-OR-GB-405) and its wiki: Good source of how the ORNO signal is encoded and how to decode it
 
