@@ -13,7 +13,8 @@
   <h1>ORNO 433mhz RC switch/socket codes calculator</h1>
 
   <div>
-    <div class="checkbox-row" id="systemCode">
+    <div class="checkbox-row" id="systemCode" style="display: inline-block; margin-right: 10px;">
+      <div>System code<br/><small>Up -> checked</small><br/><small>Down -> unchecked</small></div>
       <!-- Checkboxes for systemCode -->
       <input type="checkbox" id="s1" onclick="checkboxStateChanged('result')">
       <input type="checkbox" id="s2" onclick="checkboxStateChanged('result')">
@@ -22,7 +23,8 @@
       <input type="checkbox" id="s5" onclick="checkboxStateChanged('result')">
     </div>
 
-    <div class="checkbox-row" id="unitCode">
+    <div class="checkbox-row" id="unitCode" style="display: inline-block">
+      <div>Unit code<br/><small>i.e. button on remote - A->E</small><br/><small>only one unchecked!</small></div>
       <!-- Checkboxes for unitCode -->
       <input type="checkbox" id="u1" onclick="checkboxStateChanged('result')">
       <input type="checkbox" id="u2" onclick="checkboxStateChanged('result')">
