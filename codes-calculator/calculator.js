@@ -12,7 +12,7 @@ function checkboxStateChanged(resultId) {
   });
 
   unitCodeCheckboxes.forEach(checkbox => {
-    unitCode += checkbox.checked ? 'F' : '0';
+    unitCode += checkbox.checked ? '0' : 'F';
   });
 
   // Combine both codes to form the final code
@@ -36,13 +36,35 @@ function checkboxStateChanged(resultId) {
   const el = document.getElementById(resultId);
 
   // Display the code value and others.......
-  const c = el.getElementsByClassName('codeResult')[0];
-  const b = el.getElementsByClassName('binaryResult')[0];
-  const d = el.getElementsByClassName('decimalResult')[0];
+  const cONs = Array.from(el.getElementsByClassName('codeResultON'));
+  const cOFFs = Array.from(el.getElementsByClassName('codeResultOFF'));
 
-  c.innerText = `Code ON: ${codeON} Code OFF: ${codeOFF}`;
-  b.innerText = `Binary ON: ${binaryON} Binary OFF: ${binaryOFF}`;
-  d.innerText = `Decimal ON: ${decimalON} Decimal OFF: ${decimalOFF}`
+  const bONs = Array.from(el.getElementsByClassName('binaryResultON'));
+  const bOFFs = Array.from(el.getElementsByClassName('binaryResultOFF'));
+
+  const dONs = Array.from(el.getElementsByClassName('decimalResultON'));
+  const dOFFs = Array.from(el.getElementsByClassName('decimalResultOFF'));
+
+  cONs.forEach(function(div) {
+      div.innerHTML = codeON;
+  });
+  cOFFs.forEach(function(div) {
+      div.innerHTML = codeOFF;
+  });
+
+  bONs.forEach(function(div) {
+      div.innerHTML = binaryON;
+  });
+  bOFFs.forEach(function(div) {
+      div.innerHTML = binaryOFF;
+  });
+
+  dONs.forEach(function(div) {
+      div.innerHTML = decimalON;
+  });
+  dOFFs.forEach(function(div) {
+      div.innerHTML = decimalOFF;
+  });
 }
 
 // Export for testing
