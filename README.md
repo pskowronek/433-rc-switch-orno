@@ -24,7 +24,7 @@ Specifications:
 
 - Python library: [rpi-rf](https://github.com/milaq/rpi-rf) - preferred way
 Or alternatively:
-- C++ code from [RPi_utils](https://github.com/ninjablocks/433Utils/tree/master/RPi_utils) - the repository references [rc-switch](https://github.com/sui77/rc-switch/) that is being used on Arduino. However to run on RPi it requires [wiringpi](https://projects.drogon.net/raspberry-pi/wiringpi/download-and-install/) library that sadly for newer Raspberry OS like Bookworm is not officially available
+- C++ code from [RPi_utils](https://github.com/ninjablocks/433Utils/tree/master/RPi_utils) - the repository references [rc-switch](https://github.com/sui77/rc-switch/) that is being used on Arduino. However to run on RPi it requires [wiringpi](https://projects.drogon.net/raspberry-pi/wiringpi/download-and-install/) library that sadly for newer Raspberry OS like Bookworm is not officially available. This project has nice a command to sniff some protocols: `RFSniffer` (however ORNO is not being recognized).
 
 ## Code calculator 
 
