@@ -52,7 +52,7 @@
   
   <div id="result">
     <div class="codeResult">
-      <div>Tri-state code</div>
+      <div><b>Tri-state code</b></div>
         ON: <div class="codeResultON" style="display: inline-block">[placeholder]</div>
         OFF: <div class="codeResultOFF" style="display: inline-block">[placeholder]</div>
       <p/>      
@@ -71,7 +71,7 @@
     </div>
     <p/>
     <div class="binaryResult">
-      <div>Binary code</div>
+      <div><b>Binary code</b></div>
         ON: <div class="binaryResultON" style="display: inline-block">[placeholder]</div>
         OFF: <div class="binaryResultOFF" style="display: inline-block">[placeholder]</div>
       <p/>
@@ -84,7 +84,7 @@
     </div>
     <p/>
     <div class="decimalResult">
-      <div>Decimal code</div>
+      <div><b>Decimal code</b></div>
         ON: <div class="decimalResultON" style="display: inline-block">[placeholder]</div>
         OFF: <div class="decimalResultOFF" style="display: inline-block">[placeholder]</div>
       <p/>
@@ -96,7 +96,7 @@
       </div>
       <p/>
       <div>
-        <div><a href="https://github.com/ninjablocks/433Utils" target="_blank">433Utils -> RPi_utils example:</a></div>
+        <div><a href="https://github.com/ninjablocks/433Utils" target="_blank">433Utils -> RPi_utils</a> example:</div>
         <div>
           <small>
             On <a href="https://www.raspberrypi.com/news/bookworm-the-new-version-of-raspberry-pi-os/">Bookworm</a> Raspberry OS there is no official
@@ -105,6 +105,33 @@
         </div>
         <div><code>./codesend <div class="decimalResultON" style="display: inline-block">[placeholder]</div> 1 # ON</code></div>
         <div><code>./codesend <div class="decimalResultOFF" style="display: inline-block">[placeholder]</div> 1 # OFF</code></div>
+      </div>
+      <p/>
+      <div>
+        <div><a href="https://github.com/markvader/ha-rpi_rf" target="_blank">Home Assistant -> rpi_rf</a> example:</div>
+        <div>
+          <small>
+            Can be installed using <a href="">https://hacs.xyz/</a>
+          </small>
+        </div>
+        <div>
+          <br/>
+          configuration.yaml:
+          <pre>
+<!--     -->switch:
+<!--     -->  - platform: rpi_rf
+<!--     -->    gpio: 17
+<!--     -->    switches:
+<!--     -->      your_switch_name:
+<!--     -->        protocol: 1
+<!--     -->        pulselength: 130
+<!--     -->        code_on: <div class="decimalResultON" style="display: inline-block">[placeholder]</div>
+<!--     -->        code_off: <div class="decimalResultOFF" style="display: inline-block">[placeholder]</div>
+<!--     -->        length: 24
+<!--     -->        signal_repetitions: 15
+<!--     -->        unique_id: "orno.rc.switch.yourswitchname"
+          </pre>
+        <div>
       </div>
 
     </div>
