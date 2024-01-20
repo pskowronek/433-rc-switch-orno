@@ -30,7 +30,7 @@ Or alternatively:
 
 ## Code calculator 
 
-Having everything connected, you go open calculator locally by going to `codes-calculator/index.html` on this cloned repo, or by using this [link](https://rawcdn.githack.com/pskowronek/433-rc-switch-orno/main/codes-calculator/index.html) (thanks to githack.com).
+Having everything connected, you go open calculator locally by going to `codes-calculator/index.html` on this cloned repo, or by using this [link](https://raw.githack.com/pskowronek/433-rc-switch-orno/main/codes-calculator/index.html) (thanks to githack.com).
 
 The calculator produces copy-paste example for both rpi-rf and 433Utils/RPi_utils.
 
